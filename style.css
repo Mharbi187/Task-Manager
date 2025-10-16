@@ -1,0 +1,66 @@
+/* Base Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Auth Pages */
+.auth-page {
+  background-color: #f8f9fa;
+}
+
+.auth-card {
+  max-width: 500px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 10px;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Task Manager Styles */
+.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.task-card {
+  transition: all 0.3s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.priority-high {
+  border-left: 4px solid #dc3545;
+}
+
+.priority-medium {
+  border-left: 4px solid #ffc107;
+}
+
+.priority-low {
+  border-left: 4px solid #28a745;
+}
+
+/* Form Controls */
+.form-control:focus {
+  box-shadow: none;
+  border-color: #86b7fe;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .auth-card {
+    padding: 1.5rem;
+  }
+
+  #addTaskForm .col-md-8,
+  #addTaskForm .col-md-2 {
+    margin-bottom: 10px;
+  }
+}
